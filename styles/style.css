@@ -1,1 +1,23 @@
-/* место для вашего кода */
+.header {
+  padding: 92px 50px 96px;
+}
+
+.header__menu {
+  text-transform: lowercase;
+}
+
+.cover {
+
+}
+
+.lots {
+
+}
+
+.about {
+
+}
+
+.footer {
+
+}
