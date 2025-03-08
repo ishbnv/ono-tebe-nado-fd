@@ -1,23 +1,47 @@
 .header {
-  padding: 92px 50px 96px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 90px 50px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: aqua;
 }
 
 .header__menu {
-  text-transform: lowercase;
+  
 }
 
-.cover {
-
+.header__links-list {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
 }
 
-.lots {
-
+.header__logo {
 }
 
-.about {
-
+.header__logo-image {
+  min-width: 140px;
 }
 
-.footer {
-
+.header__links-list-item_no-bullit {
+  list-style: none;
 }
+
+.address {
+  justify-self: end;
+  max-width: 240px;
+}
+
+.header__address {
+}
+
+.cover {}
+
+.lots {}
+
+.about {}
+
+.footer {}
