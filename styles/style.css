@@ -1,47 +1,73 @@
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+.layout-common {
+  box-sizing: border-box;
+  margin: 180px 0;
+  padding: 0 50px;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: #fff;
+}
+
 .header {
+  position: sticky;
+  /* доработать стики позиционирование */
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
+  margin: 0;
   padding: 90px 50px;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  background-color: aqua;
-}
-
-.header__menu {
   
 }
 
-.header__links-list {
-  display: flex;
-  gap: 32px;
-  list-style: circle;
+.header__menu {
+  /* разложить список в ряд */
 }
 
 .header__logo {
-}
-
-.header__logo-image {
-  min-width: 140px;
-}
-
-.header__links-list-item_no-bullit {
-  list-style: none;
-}
-
-.address {
-  justify-self: end;
-  max-width: 240px;
+  /* привести к блочному виду, задать неявные размеры контейнера */
 }
 
 .header__address {
+  /* задать размеры блоку с адресом */
 }
 
-.cover {}
+.header__links-list,
+.lots__card-list,
+.footer__menu-list,
+.footer__social-list {
+  list-style: none;
+}
 
-.lots {}
+.header__links-list-item {
+  padding: 0 0 0 13px;
+  list-style: circle;
+}
 
-.about {}
+.header__link,
+.header__link_active,
+.address {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
 
-.footer {}
+.header__link {
+  border-bottom: 1px solid #000;
+}
+
+.cover {
+  background-image: url("../images/cover.jpg");
+}
+
+.lots__heading,
+.about__title {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+/* сделать стики футер как было показано на уроке без стики футера */
