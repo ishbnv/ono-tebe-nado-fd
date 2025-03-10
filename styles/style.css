@@ -263,8 +263,8 @@ body {
 
 .footer__menu {
   justify-items: center;
-  text-transform: lowercase;
   line-height: 22px;
+  text-transform: lowercase;
 }
 
 .footer__menu-list-item {
