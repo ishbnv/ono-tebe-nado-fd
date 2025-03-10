@@ -3,8 +3,7 @@ body {
 }
 
 .layout-common {
-  padding: 0 50px;
-  font-family: Raleway, sans-serif;
+  padding: 60px 24px;
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
@@ -16,7 +15,6 @@ body {
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   width: 100%;
-  margin: 0;
   padding: 90px 50px;
   font-size: 18px;
 }
@@ -60,7 +58,8 @@ body {
 
 .header__link,
 .header__link_active,
-.address {
+.address,
+.lots__look-more-link {
   font-style: normal;
   text-decoration: none;
 }
@@ -72,19 +71,11 @@ body {
 .cover {
   position: relative;
   z-index: 0;
+  gap: 0 0 90px 0;
   padding: 165px 50px 50px;
   background-image: url("../images/cover.jpg");
   background-position: center;
   background-size: cover;
-}
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
@@ -102,7 +93,7 @@ body {
 
 .aligned-text_center {
   margin-right: -0.3em;
-  padding: 20px 0;
+  padding: 18px 0;
   text-align: center;
 }
 
@@ -119,14 +110,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 103px;
 }
 
 .description__aligned-text {
   color: #fff;
   font-size: 22px;
   text-transform: uppercase;
-  word-spacing: 18px;
+  word-spacing: 19px;
 }
 
 .description__button {
@@ -138,10 +129,94 @@ body {
   background-color: transparent;
 }
 
+.lots {
+  padding-top: 190px;
+  font-style: normal;
+  text-decoration: none;
+}
+
 .lots__heading,
 .about__title {
   font-weight: bold;
   font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__heading {
+  padding: 0 0 40px 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 25px;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+.card-link {
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 48px 40px;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card__title {
+  color: #fff;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: 1px underline;
+  text-underline-offset: 3px;
+}
+
+.card__text {
+  color: #fff;
+}
+
+.lots__look-more-link {
+  padding-left: 40px;
+  text-decoration: 1px underline;
+  text-underline-offset: 3px;
+  text-transform: lowercase;
 }
 
 /* сделать стики футер как было показано на уроке без стики футера */
