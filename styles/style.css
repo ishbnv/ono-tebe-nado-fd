@@ -224,7 +224,7 @@
 
 .about {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2.1fr;
   gap: 0 25px;
   padding-top: 155px;
 }
@@ -260,7 +260,7 @@
 
 .footer__menu {
   justify-items: center;
-  line-height: 22px;
+  line-height: 21px;
   text-transform: lowercase;
 }
 
