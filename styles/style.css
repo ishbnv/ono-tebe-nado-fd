@@ -36,21 +36,15 @@
 }
 
 .header__links-list,
-.header__address-list,
 .lots__card-list,
 .footer__menu-list,
-.footer__social-list,
-.footer__address-list {
+.footer__social-list {
   list-style: none;
 }
 
 .header__links-list {
   display: flex;
   gap: 28px;
-}
-
-.header__address-list {
-  max-width: 240px;
 }
 
 .header__links-list-item {
