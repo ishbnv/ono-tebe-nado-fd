@@ -53,10 +53,9 @@
 }
 
 .header__link,
-.header__link_active,
 .address,
+.address__link,
 .lots__look-more-link,
-.footer__menu-link_active,
 .footer__menu-link,
 .footer__link {
   font-style: normal;
@@ -64,11 +63,17 @@
 }
 
 .header__link,
+.address__link,
 .footer__menu-link,
 .footer__link,
 .lots__look-more-link {
   text-decoration: 1px underline;
   text-underline-offset: 4px;
+}
+
+.header__link_active,
+.footer__menu-link_active {
+  text-decoration: none;
 }
 
 .cover {
